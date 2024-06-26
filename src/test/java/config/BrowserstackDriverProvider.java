@@ -13,8 +13,8 @@ import java.net.URL;
 
 public class BrowserstackDriverProvider implements WebDriverProvider {
 
-    protected static DeviceConfig deviceConfig = ConfigFactory.create(DeviceConfig.class, System.getProperties());
     protected static AuthConfig authConfig = ConfigFactory.create(AuthConfig.class, System.getProperties());
+    private static DeviceConfig deviceConfig = ConfigFactory.create(DeviceConfig.class, System.getProperties());
 
     @Nonnull
     @Override
